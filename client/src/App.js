@@ -2,6 +2,7 @@ import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Predictions from "./components/Predictions"
+import UserSignupForm from "./components/userSignupForm"
 import axios from "axios";
 
 const apiKey = "mQqqBksAR5JpYtr6dwTse7YMT";
@@ -53,6 +54,14 @@ handleStop = event =>{
       this.setState ({
         prd: res.data['bustime-response'].prd
         })
+      }).then(res => {
+        console.log("this.state 1 = ", this.state)
+        this.setState({
+          route: '',
+          directionSelected: '',
+          stopSelected: ''
+        })
+        console.log("this.state 2 = ", this.state)
       })
   }
 
@@ -60,6 +69,7 @@ handleStop = event =>{
     return(
       <div>
         <Titles />
+        <UserSignupForm />
         <Form 
         getPredictions={this.getPredictions} 
         handleChange={this.handleChange} 
@@ -67,9 +77,9 @@ handleStop = event =>{
         handleDirChange={this.handleDirChange}
         stops={this.state.stops}
         direction={this.state.direction}/>
-        {this.state.prd.length > 0 ? 
+        {this.state.prd ? 
           this.state.prd.map(e => <Predictions route={e.rt} destination={e.des} predictionTime={e.prdctdn}/>)
-        : <p>Your Results Here</p>
+        : <p>No Results Found</p>
       }
       </div>
     );
