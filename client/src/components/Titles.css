@@ -1,8 +1,13 @@
 .jumbotron{
-    height: 500px;
+    height: 620px;
     text-align: center;
     background:rgba(0, 0, 0, 0.377);
     background-image:url(../img/jumbotron.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
     border-bottom: 3px solid rgba(240, 255, 255, 0.596)
     
 }
