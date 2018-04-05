@@ -3,7 +3,7 @@ import "./Prediction.css"
 
 const Predictions = props => (
     <div id="info">
-        <p> Route: <span>{props.route}</span> <br/> To: <span>{props.destination}</span> <br/> In <span>{props.predictionTime}</span> Minutes </p>
+        <p> <span id="routeNum">{props.route}</span> <span id="routeDest">{props.destination}</span><span id="routeTime">{props.predictionTime}</span></p>
     </div>
 )
 

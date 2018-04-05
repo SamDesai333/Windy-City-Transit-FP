@@ -7,6 +7,7 @@ export default {
   },
   getUser: function(obj) {
       console.log("api obj", obj);
-    return axios.post("/api/signin/user",obj);
+    return axios.post("/api/signin/user", obj);
   }
+
 };

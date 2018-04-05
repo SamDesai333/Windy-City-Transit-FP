@@ -1,5 +1,37 @@
+body{
+    align-items: center;
+}
 span{
     font-size: 30px;
+    color: azure;
+}
+#info{
+    margin-left: 260px;
+    margin-right:260px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(25, 25, 26, 0.747);
+    text-align: center;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+
+}
+#routeNum {
+    float: left;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: rgba(255, 174, 0, 0.993);
+}
+#routeDest{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: rgb(255, 174, 0, 0.993);
+}
+#routeTime{
+    float:right;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: rgb(255, 174, 0, 0.993);
 }
 
 
