@@ -5,7 +5,8 @@ class UserSignupForm extends React.Component{
     
     state= {
         email:'',
-        password:''
+        password:'',
+        isAuthenticated: false
     }
 
     handleFormChange = event => {
@@ -21,7 +22,7 @@ class UserSignupForm extends React.Component{
           API.saveUser({
             email: this.state.email,
             password: this.state.password
-          }).catch(err => console.log(err));
+          }).then(alert("You've Signed Up! Please sign in to continue...")).catch(err => console.log(err));
     };
 
     logInFormSubmit = event => {
@@ -29,8 +30,20 @@ class UserSignupForm extends React.Component{
         API.getUser({
             email: this.state.email,
             password: this.state.password
-          }).then(data => console.log("user",data)).catch(err => console.log(err));
-    
+          }).then(data => {
+                if(!data.data){
+                    console.log("User Does Not Exist")
+                   alert("User Does Not Exist! ")
+                }
+                else{
+                    console.log("User Authenticated", data)
+                    alert("Signed In!")
+                    this.setState({
+                        isAuthenticated: true
+                    })
+
+                }
+            })
     }
 
     render(){

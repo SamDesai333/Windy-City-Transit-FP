@@ -3,7 +3,9 @@ import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Predictions from "./components/Predictions"
 import UserSignupForm from "./components/userSignupForm"
+import "./App.css"
 import axios from "axios";
+
 
 const apiKey = "mQqqBksAR5JpYtr6dwTse7YMT";
 const proxy = 'https://cors-anywhere.herokuapp.com/'

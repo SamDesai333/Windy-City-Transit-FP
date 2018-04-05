@@ -1,0 +1,18 @@
+.jumbotron{
+    height: 500px;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.377);
+    background-image:url(../img/jumbotron.png);
+    border-bottom: 3px solid rgba(240, 255, 255, 0.596)
+    
+}
+.logo{
+    width:31%;
+}
+
+h2{
+    color: rgba(240, 255, 255, 0.719);
+}
+p{
+    color: rgba(255, 0, 0, 0.356);
+}

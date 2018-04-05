@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(100deg, #2E383F, rgb(3, 63, 82));
+    align-items: center;
+    font-family: 'Share Tech', sans-serif;
+    
+}
+form{
+    text-align: center;
+}
+input{
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    -webkit-transition: all 0.60s ease-in-out;
+    -moz-transition: all 0.60s ease-in-out;
+    -ms-transition: all 0.60s ease-in-out;
+    -o-transition: all 0.60s ease-in-out;
+}
+select{
+    height:46px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    -webkit-transition: all 0.60s ease-in-out;
+    -moz-transition: all 0.60s ease-in-out;
+    -ms-transition: all 0.60s ease-in-out;
+    -o-transition: all 0.60s ease-in-out;
+}
+button{
+    border-radius: 4px;
+    height: 46px;
+    margin-left: 10px;
+    -webkit-transition: all 0.60s ease-in-out;
+    -moz-transition: all 0.60s ease-in-out;
+    -ms-transition: all 0.60s ease-in-out;
+    -o-transition: all 0.60s ease-in-out;
+}
+button:hover {
+    background-color: #c8d7e0;
+}
+
+input:hover {
+    background-color: #c8d7e0;
+}
+select:hover {
+    background-color: #c8d7e0;
+}
